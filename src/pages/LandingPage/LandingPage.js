@@ -5,33 +5,33 @@ import Payment from "../../Components/payment/Payment";
 import { Div, Buttonbox, P } from "./style";
 import { Button } from "../../Components/Button/style";
 import dataset from "../../dataset";
+import "../../App";
 
 export default function LandingPage() {
-  const [name, setName] = useState("");
-  const [info, setInfo] = useState("");
-  const [join, setjoin] = useState("");
+  const [home, sethome] = useState(dataset[0]);
 
   const Button1 = () => {
-    setName(dataset.Home1.Name);
-    setInfo(dataset.Home1.phoneNumber);
-    setjoin(dataset.Home1.joinedDate);
+    const selected = 0;
+    sethome(dataset[selected]);
   };
   const Button2 = () => {
-    setName(dataset.Home2.Name);
-    setInfo(dataset.Home2.phoneNumber);
+    const selected = 1;
+    sethome(dataset[selected]);
   };
   const Button3 = () => {
-    setName(dataset.Home3.Name);
-    setInfo(dataset.Home3.phoneNumber);
+    const selected = 2;
+    sethome(dataset[selected]);
   };
   const Button4 = () => {
-    setName(dataset.Home4.Name);
-    setInfo(dataset.Home4.phoneNumber);
+    const selected = 3;
+    sethome(dataset[selected]);
   };
 
   return (
     <div>
-      <P style={{ fontSize: "20vm" }}>Tenant Name : {name}</P>
+      <P style={{ fontSize: "20vm" }}>Tenant Name : {home.Name}</P>
+      <div className="circle1"></div>
+      <div className="circle2"></div>
       <Buttonbox>
         <Button buttonnumber="Home1" onClick={() => Button1()}>
           Home1
@@ -47,9 +47,9 @@ export default function LandingPage() {
         </Button>
       </Buttonbox>
       <Div>
-        <InfoCard information={info} join={join} />
-        <Misc />
+        <InfoCard home={home} />
         <Payment />
+        <Misc />
       </Div>
     </div>
   );

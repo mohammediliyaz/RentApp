@@ -3,3 +3,46 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background: linear-gradient(to right bottom, rgb(206, 204, 236), #8f8fe7);
+}
+
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 6%;
+  right: 14%;
+}
+.circle2 {
+  bottom: -10%;
+  left: 10%;
+}
+
+@media all and (max-width: 425px) {
+  .circle1,
+  .circle2 {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .circle1 {
+    top: 12%;
+    right: -3%;
+  }
+  .circle2 {
+    display: none;
+  }
+}

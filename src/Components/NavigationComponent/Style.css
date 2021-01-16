@@ -1,14 +1,12 @@
 .navigation-main {
   width: 100%;
-
-  background-color: rgb(125, 125, 230);
 }
 .navigation {
   display: flex;
 
   height: 50px;
   position: relative;
-  background-color: rgb(125, 125, 230);
+
   margin: 0 15% 0 15%;
   justify-content: flex-end;
 }
@@ -27,7 +25,10 @@
   list-style-type: none;
   color: white;
 }
-
+.navitems:hover {
+  color: #7d7de6;
+  cursor: pointer;
+}
 .fa-bars {
   display: none;
   color: white;
@@ -62,8 +63,8 @@
     right: 0px;
     left: 0;
     z-index: 99;
-
-    background-color: rgb(18, 18, 29);
+    border-radius: 0.5rem;
+    background-color: rgba(126, 124, 238, 0.9);
     color: white;
   }
   .navitems {

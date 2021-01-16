@@ -12,9 +12,7 @@ export default function Navigation() {
             <li className="navitems " onClick={() => history.push("/")}>
               Home
             </li>
-            <li className="navitems " onClick={() => history.push("/about")}>
-              About
-            </li>
+
             <li className="navitems " onClick={() => history.push("/contact")}>
               Contact
             </li>

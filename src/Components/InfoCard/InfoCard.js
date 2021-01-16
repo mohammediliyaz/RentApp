@@ -4,8 +4,8 @@ import { Div, P } from "./style";
 export default function InfoCard(props) {
   return (
     <Div>
-      <P>{props.information}</P>
-      <p>{props.join}</p>
+      <P>ph: {props.home.phoneNumber}</P>
+      <p>joined date: {props.home.joinedDate}</p>
     </Div>
   );
 }

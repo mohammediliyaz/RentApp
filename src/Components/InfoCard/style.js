@@ -8,6 +8,7 @@ export const Div = styled.div`
   );
   border-radius: 1rem;
   grid-row-start: 1;
+
   grid-row-end: 3;
   height: 600px;
   box-sizing: border-box;
@@ -25,6 +26,6 @@ export const P = styled.p`
   width: 32.5vw;
 
   @media all and (max-width: 425px) {
-    width: 40vh;
+    width: 30vh;
   }
 `;

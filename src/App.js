@@ -18,8 +18,8 @@ function App() {
       <Navigation />
       <Router history={history}>
         <Switch>
-          <Route path="/" component={LandingPage} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/" exact component={LandingPage} />
+          <Route path="/Contact" exact component={Contact} />
         </Switch>
       </Router>
     </div>

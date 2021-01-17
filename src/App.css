@@ -6,6 +6,7 @@
 
 body {
   background: linear-gradient(to right bottom, rgb(206, 204, 236), #8f8fe7);
+  font-family: "Yusei Magic", sans-serif;
 }
 
 .circle1,
@@ -23,7 +24,7 @@ body {
 }
 
 .circle1 {
-  top: 6%;
+  top: 14%;
   right: 14%;
 }
 .circle2 {

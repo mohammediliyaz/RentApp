@@ -1,0 +1,37 @@
+.contact {
+  height: 550px;
+  width: 650px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 10px;
+  font-family: "Yusei Magic", sans-serif;
+}
+
+.information {
+  display: flex;
+  color: rgb(118, 34, 134);
+  margin: 10px;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  font-size: 3vh;
+}
+h3 {
+  margin-top: 8px;
+}
+
+@media all and (max-width: 425px) {
+  .information {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}

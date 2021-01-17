@@ -7,7 +7,10 @@ export default function Payment() {
   const [value, onChange] = useState(new Date());
   return (
     <Div>
-      <Calendar onChange={onChange} value={value} />
+      <h3>Payment Due:</h3>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <Calendar onChange={onChange} value={value} />
+      </div>
     </Div>
   );
 }

@@ -5,11 +5,11 @@ import Payment from "../../Components/payment/Payment";
 import { Div, Buttonbox, P } from "./style";
 import { Button } from "../../Components/Button/style";
 import dataset from "../../dataset";
-import "../../App";
+
 
 export default function LandingPage() {
   const [home, sethome] = useState(dataset[0]);
-
+  console.log("rendered again")
   const Button1 = () => {
     const selected = 0;
     sethome(dataset[selected]);
@@ -30,8 +30,7 @@ export default function LandingPage() {
   return (
     <div>
       <P style={{ fontSize: "20vm" }}>Tenant Name : {home.Name}</P>
-      <div className="circle1"></div>
-      <div className="circle2"></div>
+      
       <Buttonbox>
         <Button buttonnumber="Home1" onClick={() => Button1()}>
           Home1

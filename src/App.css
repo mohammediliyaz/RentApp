@@ -21,6 +21,8 @@ body {
   width: 10rem;
   position: absolute;
   border-radius: 50%;
+  animation: sk-bounce 4.0s infinite ease-in-out;
+
 }
 
 .circle1 {
@@ -31,7 +33,62 @@ body {
   bottom: -10%;
   left: 10%;
 }
-
+.circle3,.circle4,.circle5,.circle6,.circle7,.circle8,.circle9{
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  border-radius: 50%;
+  animation: sk-bounce 3.0s infinite ease-in-out;
+}
+.circle3 {
+  top: 4%;
+  left: -1%;
+  height: 5rem;
+  width: 5rem;
+}
+.circle4 {
+  top: 20%;
+  left:10%;
+  animation: sk-bounce 4.5s infinite ease-in-out;
+}
+.circle5 {
+  top: 44%;
+  left:1%;
+  height: 2.5rem;
+  width: 2.5rem;
+  animation: sk-bounce 3.5s infinite ease-in-out;
+}
+.circle6 {
+  top: -5%;
+  right: 40%;
+  height: 6rem;
+  width: 6rem;
+  animation: sk-bounce 5.5s infinite ease-in-out;
+}
+.circle7 {
+  top: 50%;
+  right: 4%;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+.circle8 {
+  top: 80%;
+  right: 13%;
+  animation: sk-bounce 4.0s infinite ease-in-out;
+}
+.circle9 {
+  bottom: -20%;
+  right:8%;
+  height: 6rem;
+  width: 6rem;
+  animation: sk-bounce 3.5s infinite ease-in-out;
+}
 @media all and (max-width: 425px) {
   .circle1,
   .circle2 {
@@ -40,10 +97,24 @@ body {
   }
 
   .circle1 {
-    top: 12%;
-    right: -3%;
+    display: none;
   }
   .circle2 {
     display: none;
+  }
+  .circle3,.circle4,.circle5,.circle6,.circle7,.circle8,.circle9{
+    display: none;
+  }
+  
+}
+@keyframes sk-bounce {
+  0%, 100% {
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+  }
+  50% {
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+      background-color: #5353d8;
   }
 }
